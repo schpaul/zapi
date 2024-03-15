@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z_M_API</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>API Messages</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Class name is required</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Abstract classes are not allowed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Method &amp;1 does not exist in class &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Method &amp;1 is not public</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Class &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_M_API</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Data processing successful</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
