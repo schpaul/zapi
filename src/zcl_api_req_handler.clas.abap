@@ -309,5 +309,6 @@ CLASS zcl_api_req_handler IMPLEMENTATION.
     lo_entity->set_content_type( iv_media_type = if_rest_media_type=>gc_appl_json ).
 
     lo_entity->set_string_data( iv_data = l_response_json ).
+
   ENDMETHOD.
 ENDCLASS.
