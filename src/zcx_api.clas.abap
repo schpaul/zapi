@@ -1,21 +1,20 @@
 CLASS zcx_api DEFINITION
-PUBLIC
-  INHERITING FROM cx_static_check
-  CREATE PUBLIC .
+  PUBLIC
+  INHERITING FROM cx_static_check FINAL
+  CREATE PUBLIC.
 
   PUBLIC SECTION.
-
-    INTERFACES if_t100_dyn_msg .
-    INTERFACES if_t100_message .
+    INTERFACES if_t100_dyn_msg.
+    INTERFACES if_t100_message.
 
     METHODS constructor
-      IMPORTING
-        !textid   LIKE if_t100_message=>t100key OPTIONAL
-        !previous LIKE previous OPTIONAL .
+      IMPORTING textid    LIKE if_t100_message=>t100key OPTIONAL
+                !previous LIKE previous                 OPTIONAL.
+
   PROTECTED SECTION.
+
   PRIVATE SECTION.
 ENDCLASS.
-
 
 
 CLASS zcx_api IMPLEMENTATION.

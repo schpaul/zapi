@@ -291,8 +291,15 @@ CLASS zcl_api_req_handler IMPLEMENTATION.
 
       CATCH cx_root INTO DATA(lo_ex).
 
-        l_message = lo_ex->get_longtext( ).
-        l_state   = mc_response_state_error.
+        IF lo_ex->previous IS BOUND.
+          " . Show error from application class
+          l_message = lo_ex->previous->get_longtext( ).
+        ELSE.
+          " . Show error from API exception
+          l_message = lo_ex->get_longtext( ).
+        ENDIF.
+
+        l_state = mc_response_state_error.
 
     ENDTRY.
 
@@ -309,6 +316,5 @@ CLASS zcl_api_req_handler IMPLEMENTATION.
     lo_entity->set_content_type( iv_media_type = if_rest_media_type=>gc_appl_json ).
 
     lo_entity->set_string_data( iv_data = l_response_json ).
-
   ENDMETHOD.
 ENDCLASS.
