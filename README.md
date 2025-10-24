@@ -1,6 +1,6 @@
 # ZAPI
 
-is a simple RESTapi written in ABAP to call any public method of any class inside your SAP-System. Sample web app to consume zapi is provided. Or just use Postman
+is a simple RESTapi written in ABAP to call any public method of any class inside your SAP-System. Just use Postman to try it out.
 
 ## How to use
 
