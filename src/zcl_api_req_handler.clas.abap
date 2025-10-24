@@ -46,7 +46,7 @@ CLASS zcl_api_req_handler IMPLEMENTATION.
     DATA ls_param_def TYPE vseoparam.
 
     FIELD-SYMBOLS <l_value> TYPE any.
-
+" . your password
     CLEAR: m_classname,
            m_method,
            mo_class,

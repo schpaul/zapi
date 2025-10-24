@@ -14,6 +14,12 @@ CLASS zcl_app_sample DEFINITION
       IMPORTING i_username          TYPE syuname
       RETURNING VALUE(rs_user_data) TYPE bapiaddr3
       RAISING   zcx_api.
+
+    CLASS-METHODS say_hello RETURNING VALUE(rv_hello_string) TYPE string.
+
+  PRIVATE SECTION.
+    CLASS-METHODS dont_say_hello RETURNING VALUE(rv_hello_string) TYPE string.
+
 ENDCLASS.
 
 
@@ -61,5 +67,13 @@ CLASS zcl_app_sample IMPLEMENTATION.
       RAISE EXCEPTION TYPE zcx_api MESSAGE e000(z_m_api) WITH 'User' i_username 'not found'.
 
     ENDIF.
+  ENDMETHOD.
+
+  METHOD say_hello.
+    rv_hello_string = 'Hello, From Your SAP Server'.
+  ENDMETHOD.
+
+  METHOD dont_say_hello.
+    rv_hello_string = 'Hello, From Your SAP Server'.
   ENDMETHOD.
 ENDCLASS.
